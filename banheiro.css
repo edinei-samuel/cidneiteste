@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+
+
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+   color: white;
+   font-size: 1.6rem;
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover{
+    background-color: #333333;
+    border-bottom: 4px solid #ffc506;  
+    color: #ffc506;
+}
+
+/* Primeira Seção */
+
+.first-section{
+    height: 60vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(img/banheiro7.jpg);
+    background-position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.first-section h1{
+    color: #ffc506;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.first-section h2{
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 3rem;
+}
+
+/*--------------------------------------------------------------AMBIENTES--------------------------------------------------------------------------*/
+
+.ambientes{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1e1f;
+}
+
+.ambientes h2{
+    font-size: 5rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+    text-transform: uppercase;
+}
+
+.list-ambient{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.list-ambient .cozinha:hover{
+    transition: 250ms;
+    transform: scale(1.2);
+}
+
+.list-ambient .quarto:hover{
+    transition: 250ms;
+    transform: scale(1.2);
+}
+
+.list-ambient .sala:hover{
+    transition: 250ms;
+    transform: scale(1.2);
+}
+
+.list-ambient .banheiro:hover{
+    transition: 250ms;
+    transform: scale(1.2);
+}
+
+.list-ambient .info {
+    background-color: #1f1e1f;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.list-ambient img {
+    width: 100%;
+    height: 200px;
+}
+
+.list-ambient .info p{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: #585858
+}
+
+.ambientes h3 {
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+    text-transform: uppercase;
+}
+
+.list-ambient .info .ver-mais {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #1f1e1f;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #dcc3b6;
+    transition: all 200ms ease-in;
+}
+
+.list-ambient .info .ver-mais:hover {
+    background-color: #1f1e1f;
+    color: #ffc506;
+}
+
+/* Sobre nós */
+
+
+.sobre{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1e1f;
+}
+
+
+.pontos-ecenciais h2{
+    font-size: 5rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pontos-ecenciais i {
+    margin: 3rem 10rem 0 10rem;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Indie Flower' cursive;
+    color: white;
+    display: block; /* Adicione esta linha para garantir que a tag <i> seja exibida como um bloco */
+}
+
+.investir{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.investir img{
+    width: 400px;
+    height: 400px;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);   
+}
+
+.investir h2{
+    font-size: 3rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.invst{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem ;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+    color: white;
+}
+
+.sobre-nos {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+}
+
+.contentsobre h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+}
+
+.contentsobre p {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: Center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+   font-size: 6rem;
+   margin-bottom: 3rem;
+   font-family: 'Indie Flower', cursive;
+   color: #ffc506;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i{
+    margin-right: 1rem;
+
+}
+
+.contatos-secao div{
+    cursor: pointer;
+}
+
+.contatos-secao div:hover{
+    color: #ffc506;
+}
+
+footer {
+    height: 25px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+        
+    }
+
+    .investir img {
+        width: 600px;
+        margin-left: -2px;
+    }
+
+    
+}
+
+@media (max-width: 980px) {
+   
+    html {
+        font-size: 50%;
+    }
+    
+}
+
+@media (max-width: 870px) {
+    .content {
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list-menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px auto;
+
+        transition-duration: 0.5s ;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        
+
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+        
+    }
+
+    .content.on .list-menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .list-menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+        
+    }
+
+}
+
+
+@media (max-width: 720px) {
+    .conteudo-principal h1 {
+        width: 350px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 645px) {
+    .investir img {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .invest p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos-secao {
+       width: 200px;
+        
+    }
+    .conteudo-principal h2 {
+        width: 200px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 399px) {
+
+    .conteudo-principal h1 {
+       font-size: 3rem;
+    }
+    .conteudo-principal h2 {
+       font-size: 2rem;
+    }
+
+
+    .investir img {
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .invest p {
+        text-align: center;
+        width: 200px;
+     }
+
+    
+}
+
+/* Adicione estas regras CSS no seu arquivo CSS (cozinha.css) */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideshow-container h2{
+    font-size: 4rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    opacity: 0; /* Defina a opacidade inicial como 0 para que os slides não sejam visíveis */
+    transition: opacity 1s ease-in-out; /* Adicione uma transição de 1 segundo com aceleração/desaceleração */
+}
+
+.fade {
+    animation: fadeInOut 5s infinite; /* Adicione uma animação de fade de 5 segundos (ou o tempo desejado) que se repete infinitamente */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* No início e no final da animação, o slide está invisível */
+    }
+    25%, 75% {
+        opacity: 1; /* No meio da animação, o slide está completamente visível */
+    }
+}
+
+#buttonContainer {
+    text-align: center;
+    margin-top: 20px; /* Ajuste a margem conforme necessário */
+}
+
+#prevBtn,
+#nextBtn {
+    background-color: #ffc506;
+    color: #fff;
+    border: none;
+    padding: 8px 15px; /* Ajuste o padding conforme necessário para reduzir o tamanho */
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    border-radius: 5px;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #ffdb58;
+}
+
+#prevBtn:focus,
+#nextBtn:focus {
+    outline: none;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+
+    .investir img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .content {
+        padding: 0px 20px;
+    }
+
+    .content .list-menu {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Adicionado para melhorar o layout em telas menores */
+    }
+
+    .content .list-menu li {
+        width: 100%;
+        text-align: center; /* Ajustado para centralizar o texto */
+    }
+
+    .content .list-menu li a {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .first-section h1 {
+        font-size: 3rem;
+    }
+
+    .first-section h2 {
+        font-size: 2rem;
+    }
+
+    .contatos-secao {
+        width: 100%;
+    }
+
+    .contatos-secao div {
+        margin: 1rem;
+    }
+
+    .sobre-nos img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .conteudo-principal h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .investir img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contatos-secao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contatos-secao div {
+        margin: 1rem;
+    }
+
+    .conteudo-principal h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 645px) {
+    .invest p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 399px) {
+
+    .investir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem; /* Ajuste a margem conforme necessário */
+        margin-bottom: 4rem; /* Ajuste a margem conforme necessário */
+    }
+    
+    .investir img {
+        width: 100%; /* Ajuste a largura para ocupar 100% da largura do contêiner */
+        max-width: 400px; /* Defina a largura máxima conforme necessário */
+        height: auto; /* Mantenha a proporção da imagem */
+        margin-top: 2rem; /* Ajuste a margem conforme necessário */
+        border: 2px solid rgb(155, 155, 155);
+    }
+    
+    .investir h2 {
+        font-size: 2.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+        font-family: 'Indie Flower', cursive;
+        color: #ffc506;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 1rem; /* Ajuste a margem conforme necessário */
+    }
+    
+    .invst {
+        margin-top: 1rem; /* Ajuste a margem conforme necessário */
+        margin-bottom: 1rem; /* Ajuste a margem conforme necessário */
+        text-align: center;
+        font-size: 1.6rem; /* Ajuste o tamanho da fonte conforme necessário */
+        width: 80%;
+        color: white;
+    }
+
+    /* ... (seu código anterior) ... */
+
+.sobre-nos {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Alteração para empilhar os elementos verticalmente */
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Alteração para empilhar os elementos verticalmente */
+}
+
+.sobre-nos img {
+    width: 100%; /* Ajuste a largura para ocupar 100% da largura do contêiner */
+    max-width: 400px; /* Defina a largura máxima conforme necessário */
+    height: auto; /* Mantenha a proporção da imagem */
+    margin-top: 2rem; /* Ajuste a margem conforme necessário */
+    border: 2px solid rgb(155, 155, 155);
+}
+
+.contentsobre h2 {
+    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 1rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ffc506;
+}
+
+.contentsobre p {
+    margin-top: 2rem; /* Ajuste a margem conforme necessário */
+    margin-left: 1rem; /* Ajuste a margem conforme necessário */
+    margin-right: 1rem; /* Ajuste a margem conforme necessário */
+    text-align: center;
+    font-size: 1.6rem; /* Ajuste o tamanho da fonte conforme necessário */
+    width: 80%;
+}
+
+/* ... (seu código posterior) ... */
+
+    .conteudo-principal h1 {
+        font-size: 2rem;
+    }
+
+    .conteudo-principal h2 {
+        font-size: 1.5rem;
+    }
+
+    .investir img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .invest p {
+        text-align: center;
+        width: 100%;
+    }
+}
